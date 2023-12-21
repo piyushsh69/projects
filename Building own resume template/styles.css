@@ -1,0 +1,185 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+/* Typography, buttons and lines */
+
+h1 {
+    font-size: 35px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-size: 13px;
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+
+p,
+li {
+    font-size: 12px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    color: rgb(98, 98, 98);
+}
+
+.container {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 620px;
+}
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background-color: white;
+    padding: 42px;
+}
+
+.section-heading::after {
+    content: " ";
+    height: 2px;
+    width: 500px;
+    position: absolute;
+    background: rgb(239, 239, 239);
+    top: 50%;
+    margin: auto 12px;
+}
+
+.section-heading {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Profile Section  */
+
+.cv .profile {
+    align-items: center;
+    display: flex;
+    gap: 22px;
+}
+
+.cv .title,
+span {
+    color: blue;
+}
+
+.cv .profile img {
+    object-fit: cover;
+    width: 120px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+.cv .profile .name-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cv .profile .name-contact a {
+    color: black;
+}
+
+/* About and Skills section  */
+
+.about-skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-skills .about {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 55%;
+}
+
+.about-skills .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 40%;
+}
+
+.about-skills .skills .skills-list {
+    display: flex;
+    gap: 40px;
+}
+
+.about-skills .skills .skills-list ul li {
+    list-style-type: none;
+}
+
+/* Education  */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-details .year {
+    width: 10%;
+}
+
+.section-details .location {
+    width: 18%;
+}
+
+.section-details div {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Experience  */
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.experience .section-details div .company-name {
+    color: rgb(98, 98, 98);
+}
+
+/* Projects  */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.projects .section-details {
+    display: flex;
+    justify-content: space-between;
+}
